@@ -1,3 +1,26 @@
-.bg-list {
-     background-color: #f8f9fb;
+
+input[type='text'] {
+     border-radius: 0 !important;
 }
+
+input[type='date'] {
+     border-radius: 0 !important;
+}
+
+button {
+     border-radius: 0 !important;
+}
+
+textarea {
+     border-radius: 0 !important;
+     resize: none !important;
+}
+
+.bg-list {
+     background-color: #d6e4ff;
+}
+
+.content-wrapper {
+     height: 36em;
+}
+
