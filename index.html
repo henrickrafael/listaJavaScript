@@ -13,32 +13,39 @@
   <body>
 
     <section> <!--Section que guarda o titulo e o botão de adicionar-->
-      <div class="container bg-list rounded border shadow-sm border-2 mt-3 p-3">
-        <h3>Adicionar à lista</h3>
-        <div class="row">
-          <div class="col-md-10 justify-content-center input-group-sm mb-2">
-            <input id="listItem" class="form-control inputValue" type="text" />
-          </div> <!--coluna onde está inserido o input text-->
-          <div class="col-sm-2">
-            <button onclick="addTarefa()" type="button" class="form-contol btn btn-success">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="mb-1 bi bi-plus-square" viewBox="0 0 16 16">
-                <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
-                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-              </svg>
-              <span>Adicionar</span>             
-            </button>
-          </div> <!-- col-sm2 onde está o button junto com ícone--> 
-        </div> <!-- row-->
+      <div class="container content-wrapper my-4 shadow-lg">
+            <div class="row">
+                <div class="col-md-7 bg-white content-wrapper overflow-auto">
+                    <div class="container-fluid dropdown bg-list mt-2 p-2">
+                        <h3>Título da Tarefa</h3>
+                        <textarea class="form-control mb-2"></textarea>
+                        <span>Expira em: 05/02</span>
+                    </div>
+                </div>
+                <div class="col-md-5 bg-dark text-white p-4 text-center content-wrapper">
+                    <div class="container mt-3">
+                      <h3>Cadastrar tarefa</h3>
+                    </div>
+                    <div class="container text-start mt-4">
+                      <span>Título da tarefa</span>
+                      <input id="taskName" type="text" class="form-control mt-2">
+                    </div>
+                    <div class="container text-start mt-3">
+                      <span>Descrição da tarefa</span>
+                      <textarea id="taskDesc" class="form-control mt-2" cols="30" rows="3"></textarea>
+                    </div>
+                    <div class="container text-start mt-3">
+                      <span>Data de realização</span>
+                      <input id="taskDate" type="date" class="form-control mt-2">
+                    </div>
+                    <div class="container mt-5">
+                      <button onclick="addTarefa()" type="button" class="form-control btn btn-success mt-3">Cadastrar</button>
+                      <button type="reset" class="form-control btn btn-warning mt-2">Limpar</button>
+                    </div>
+                </div>
+            </div>
       </div> <!--Container-->
     </section>
-
-    
-    <section id="rowList" class="mt-2">
-      <!-- As tarefas são adicionadas aqui via JS-->
-    </section>
-
-
-
 
   </body>
 </html>
