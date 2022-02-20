@@ -13,16 +13,13 @@
   <body>
 
     <section> <!--Section que guarda o titulo e o botão de adicionar-->
-      <div class="container content-wrapper my-4 shadow-lg">
+      <div class="container content-wrapper my-4 shadow">
             <div class="row">
-                <div class="col-md-7 bg-white content-wrapper overflow-auto">
-                    <div class="container-fluid dropdown bg-list mt-2 p-2">
-                        <h3>Título da Tarefa</h3>
-                        <textarea class="form-control mb-2"></textarea>
-                        <span>Expira em: 05/02</span>
-                    </div>
+                <div id="listItem" class="col-md-7 bg-white content-wrapper overflow-auto">
+                  <!--O conteúd é adicionado dinâmicamente aqui dentro-->
                 </div>
                 <div class="col-md-5 bg-dark text-white p-4 text-center content-wrapper">
+                  <form>
                     <div class="container mt-3">
                       <h3>Cadastrar tarefa</h3>
                     </div>
@@ -42,6 +39,7 @@
                       <button onclick="addTarefa()" type="button" class="form-control btn btn-success mt-3">Cadastrar</button>
                       <button type="reset" class="form-control btn btn-warning mt-2">Limpar</button>
                     </div>
+                  </form>
                 </div>
             </div>
       </div> <!--Container-->
