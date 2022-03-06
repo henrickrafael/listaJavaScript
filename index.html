@@ -16,16 +16,16 @@
       <div class="container content-wrapper my-4 shadow">
             <div class="row">
                 <div id="listItem" class="col-md-7 bg-white content-wrapper overflow-auto">
-                  <!--O conteúd é adicionado dinâmicamente aqui dentro-->
+                  <!--O conteúdo é adicionado dinâmicamente aqui dentro-->
                 </div>
                 <div class="col-md-5 bg-dark text-white p-4 text-center content-wrapper">
-                  <form>
+                  <form id="taskForm">
                     <div class="container mt-3">
                       <h3>Cadastrar tarefa</h3>
                     </div>
                     <div class="container text-start mt-4">
                       <span>Título da tarefa</span>
-                      <input id="taskName" type="text" class="form-control mt-2">
+                      <input id="taskName" type="text" class="form-control mt-2" required>
                     </div>
                     <div class="container text-start mt-3">
                       <span>Descrição da tarefa</span>
@@ -33,7 +33,7 @@
                     </div>
                     <div class="container text-start mt-3">
                       <span>Data de realização</span>
-                      <input id="taskDate" type="date" class="form-control mt-2">
+                      <input id="taskDate" type="date" class="form-control mt-2" required>
                     </div>
                     <div class="container mt-5">
                       <button onclick="addTarefa()" type="button" class="form-control btn btn-success mt-3">Cadastrar</button>
